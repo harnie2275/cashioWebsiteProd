@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 70px 0;
+}
+.container span {
+  color: #5d6982;
+  font-size: 15px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bebff9;
+  color: #fff;
+  font-size: 21px;
+}
+.icon_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin-top: 30px;
+}
+@media screen and (min-width: 767px) {
+  .container span {
+    font-size: 20px;
+  }
+  .icon {
+    background-color: #6666ff;
+    width: 55px;
+    height: 55px;
+  }
+  .icon_cont {
+    gap: 20px;
+  }
+}

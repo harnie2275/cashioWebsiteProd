@@ -1,0 +1,134 @@
+.main_cont {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 0 13px;
+}
+.wave2,
+.wave {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: -160px;
+}
+.wave {
+  display: none;
+}
+.container {
+  background: #5d5fef;
+  border-radius: 210.127px;
+  position: relative;
+  z-index: 1;
+  flex-direction: column;
+  height: 230px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background: url("/public/iphone.png"); */
+  /* justify-content: center; */
+  /* width: 100px; */
+}
+.curve {
+  color: #fff;
+  font-family: graphikMedium;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  display: none;
+}
+.main_paralax_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+}
+.overall_cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.qr_cont {
+  background-color: #fff;
+  height: 170px;
+  width: 170px;
+  border-radius: 24px;
+  padding: 6px;
+  position: absolute;
+  right: -85px;
+  z-index: 30;
+  top: 70px;
+  display: none;
+  transform: rotate(7deg);
+  box-shadow: 0px 25px 30px rgba(0, 0, 0, 0.1);
+}
+.img_cont {
+  margin-top: 12%;
+  position: absolute;
+  height: 100%;
+  width: 280px;
+  /* display: none; */
+}
+
+@media screen and (min-width: 401px) {
+  .wave {
+    top: -160px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 430px;
+    height: 230px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .twirl {
+    width: 90px;
+  }
+  .main_paralax_container {
+    width: unset;
+  }
+  .qr_cont {
+    display: block;
+  }
+  .curve {
+    display: flex;
+    margin-top: 40px;
+    font-size: 12px;
+    margin-right: -100px;
+    position: relative;
+    z-index: 10;
+  }
+  .img_cont {
+    width: 300px;
+  }
+  .wave {
+    display: block;
+    top: -300px;
+  }
+  .wave2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 901px) {
+  .container {
+    width: 500px;
+    height: 290px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .img_cont {
+    /* margin-top: 1000px; */
+  }
+}
