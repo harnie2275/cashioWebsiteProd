@@ -1,0 +1,37 @@
+.hero {
+    padding: 12px;
+    /* height: 1000000px; */
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-family: graphikSemi;
+}
+
+.link {
+    font-family: graphikMedium;
+    text-align: center;
+    display: block;
+    margin-top: 70px;
+    font-size: 13px;
+}
+
+.subHeader {
+    font-size: 1.15rem;
+    font-weight: 900;
+    font-family: graphikMedium;
+}
+
+.body{
+    font-size: 13px;
+    font-weight: 400;
+    /* font-family: graphikSemi; */
+}
+
+
+@media screen and (min-width: 1024px) {
+    .hero{
+        width: 1024px;
+    }
+}

@@ -17,7 +17,10 @@ const Download = () => {
             objectFit="contain"
             quality={100}
           />
-          App Store
+          <span style={{ display: "grid" }}>
+            <span style={{ fontSize: 10 }}>coming soon on</span>
+            App Store
+          </span>
         </div>
         <div>
           {" "}
@@ -29,7 +32,10 @@ const Download = () => {
             objectFit="contain"
             quality={100}
           />
-          Google play
+          <span style={{ display: "grid" }}>
+            <span style={{ fontSize: 10 }}>coming soon on</span>
+            Google play
+          </span>
         </div>
       </div>
     </div>

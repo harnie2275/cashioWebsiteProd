@@ -83,7 +83,10 @@ const MobileNav = ({ open, setNav, appModal, setAppModal }) => {
                     quality={100}
                     priority
                   />
-                  App Store
+                  <span style={{ display: "grid" }}>
+                    <span style={{ fontSize: 9 }}>coming soon on</span>
+                    App Store
+                  </span>
                 </button>
                 <button>
                   {" "}
@@ -95,7 +98,10 @@ const MobileNav = ({ open, setNav, appModal, setAppModal }) => {
                     quality={100}
                     priority
                   />
-                  Play Store
+                  <span style={{ display: "grid" }}>
+                    <span style={{ fontSize: 10 }}>coming soon on</span>
+                    Play Store
+                  </span>
                 </button>
               </div>
             </div>
