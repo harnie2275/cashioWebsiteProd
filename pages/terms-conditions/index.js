@@ -50,13 +50,14 @@ const Terms = () => {
           Welcome to Cashio!
           <br />
           <Sentence>
-            PLEASE READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY. THESE
+            $
+            {` PLEASE READ THESE TERMS AND CONDITIONS ("Terms") CAREFULLY. THESE
             TERMS FORM A LEGAL AGREEMENT BETWEEN CASHIO FINANCIAL TECHNOLOGIES
             LIMITED AND YOU. By clicking ON "I ACCEPT" OR "I AGREE" OR By
             DOWNLOADING, INSTALLING OR OTHERWISE USING THE SERVICES, YOU ACCEPT
             AND AGREE TO THE TERMS CONTAINED HEREIN. IF YOU DO NOT AGREE TO
             THESE TERMS, DO NOT CLICK "I ACCEPT" OR "I AGREE" OR DOWNLOAD,
-            INSTALL OR USE THE SERVICES.
+            INSTALL OR USE THE SERVICES.`}
           </Sentence>
         </div>
         <div className={classes.subHeader}>
@@ -155,9 +156,10 @@ const Terms = () => {
             the Platform.
           </Sentence>
           <Sentence>
-            "Website" shall mean https://.mycashoiowallet.com &
+            $
+            {` "Website" shall mean https://.mycashoiowallet.com &
             https://app.mycashiowallet.com, managed and operated by the Company
-            for the provision of Services.
+            for the provision of Services.`}
           </Sentence>
         </div>
         <div className={classes.subHeader}>
