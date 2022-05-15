@@ -17,14 +17,22 @@ const Header = ({ appModal, setAppModal }) => {
   return (
     <header className={classes.container}>
       <div className={classes.cont}>
-        <Image
-          src="/logo.png"
-          height={30}
-          width={120}
-          objectFit="contain"
-          priority
-          quality={100}
-        />
+        <div
+          onClick={() => {
+            router.push("/");
+          }}
+          style={{ cursor: "pointer" }}
+        >
+          <Image
+            src="/logo.png"
+            height={30}
+            width={120}
+            objectFit="contain"
+            priority
+            quality={100}
+          />
+        </div>
+
         <div
           className={`${classes.bar_cont} ${
             open ? classes.expand_bars : undefined

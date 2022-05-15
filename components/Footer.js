@@ -7,19 +7,28 @@ import {
   RiInstagramLine,
   RiTwitterFill,
 } from "react-icons/ri";
+import { useRouter } from "next/router";
+
 const Footer = () => {
+  const router = useRouter();
   const Icon = ({ icon, link }) => {
+    console.log(link);
     return (
-      <div className={classes.icon} href={link}>
-        {icon}
+      <div className={classes.icon}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {icon}
+        </a>
       </div>
     );
   };
   const links = [
-    { icon: <RiFacebookFill />, link: "/k" },
-    { icon: <RiLinkedinFill />, link: "/l" },
-    { icon: <RiInstagramLine />, link: "/l" },
-    { icon: <RiTwitterFill />, link: "/l" },
+    { icon: <RiFacebookFill />, link: "https://web.facebook.com/cashiowallet" },
+    // { icon: <RiLinkedinFill />, link: "/l" },
+    {
+      icon: <RiInstagramLine />,
+      link: "https://www.instagram.com/cashio_wallet/",
+    },
+    { icon: <RiTwitterFill />, link: "https://twitter.com/cashio_wallet/" },
   ];
   return (
     <footer className={classes.main_cont}>
@@ -28,17 +37,22 @@ const Footer = () => {
           <span>Contact</span>
           <div className={classes.contact_addr}>
             <div>support@mycashiowallet.com</div>
+            <div>50/52 Toyin Str, Ikeja, Lagos, Nigeria.</div>
             <div>224 Riverdale Ave, CA USA</div>
           </div>
         </div>
         <div className={classes.icon_cont}>
           {links.map((l, id) => {
-            return <Icon key={id} icon={l.icon} link={l.link} />;
+            return (
+              <div key={id} style={{ cursor: "pointer" }}>
+                <Icon key={id} icon={l.icon} link={l.link} />
+              </div>
+            );
           })}
         </div>
         <div className={classes.terms}>
-          <Link href="/">Terms of service</Link>
-          <Link href="/">Privacy policy</Link>
+          <Link href="/terms-conditions">Terms of service</Link>
+          <Link href="/privacy-policy">Privacy policy</Link>
         </div>
         <div className={classes.details}>
           Cashio a financial technology company is a payment platform solving
